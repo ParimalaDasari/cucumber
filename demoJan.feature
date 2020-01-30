@@ -22,7 +22,7 @@ Then Login is successful
 Examples:
   |user|password|
   |Lalitha|password123|
-  |john|Ravi123|
+  |john|Ravi1234 |
   
   
   @data-driven
