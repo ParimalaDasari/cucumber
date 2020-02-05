@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber .class)
-@CucumberOptions(features="demoJan.feature",glue= {"stepglu"},tags= {"@data-driven"},
+@CucumberOptions(features="practical.feature",glue= {"stepglu"},tags= {"@tag1"},
 plugin= {"json:target/cucumber-report.json"})
 
 public class TestRunner {

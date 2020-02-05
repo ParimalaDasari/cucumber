@@ -1,12 +1,16 @@
 Feature: Pixel store pos
 Background:
   Given sales executive logged into the machine
+  
+  
 @RegressionTest
 Scenario: Executive signup
    Given executive is at the signup registration
    When executive provides "admin" and "admin"
-   Then signup successful          
- @Smoke @RegressionTest          
+   Then signup successful  
+   
+           
+@Smoke @RegressionTest          
  Scenario: shopping cart
  Given executive added the items to cart
  When items price is calculated
@@ -32,4 +36,12 @@ When Larry searches for product in the search field
 |Hand|
 |Lap|
 Then searches for the  availability
+
+@CaseStudyTest
+  Scenario: The one where the user moves to the cart without adding any item in it
+    Given User proceeds to payment without adding any item in the cart
+    Then TestMeApp doesnot display the cart icon
+    When User proceeds to payment with adding any item to the cart
+    Then TestMeApp displays cart icon
+
   
