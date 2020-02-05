@@ -73,10 +73,10 @@ public class Stepdef {
 //	public void goto(String string) {
 //		
 //	}
-	 @Then("select the {string} option")
-	 public void select_the_option(String string) {
-		 
-	 }
+//	 @Then("select the {string} option")
+//	 public void select_the_option(String string) {
+//		 
+//	 }
 	
 	
 	
