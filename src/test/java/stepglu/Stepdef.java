@@ -48,7 +48,7 @@ public class Stepdef {
 	@Then("admin click on {string} option")
 		public void admin_click_on_option(String string) {
 		
-		driver.findElement(By .name("Add Catgerory")).click();
+		driver.findElement(By .linkText("Add Category")).click();
 		
 	}
 	
